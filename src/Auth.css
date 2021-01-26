@@ -1,0 +1,78 @@
+.auth {
+    background-image: url('https://springboard-cdn.appadvice.com/wp-content/appadvice-v2-media/2016/11/Netflix-background_860c8ece6b34fb4f43af02255ca8f225-xl.jpg');
+    background-size: cover;
+    height: 820px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    color: white;
+    background-color:rgb(0,0,0,0.9);
+    padding: 0px;
+    padding-top: 80px;
+    padding-bottom: 170px;
+    padding-left: 20px;
+    padding-right: 25px;
+
+}
+
+.form ul {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    list-style-type: none;
+    
+}
+.form ul li {
+   margin: 20px;
+   padding-right: 20px;
+    
+}
+
+.Auth_input {
+    width: 300px;
+    padding: 20px;
+    background-color:rgb(68, 67, 67);
+    color: rgb(169,169,169);
+    font-size: 18px;
+    border-radius: 7px;
+
+}
+
+.Auth_button {
+    padding: 20px 136px;
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: .05rem solid rgb(27, 27, 27);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.auth_sign {
+    font-size: 35px ;
+    font-weight: bold;
+    padding-left: 60px;
+
+}
+
+.auth_logo {
+    width: 200px;
+    object-fit: contain;
+    padding: 25px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.switch {
+    color: orange;
+    padding-left: 350px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
