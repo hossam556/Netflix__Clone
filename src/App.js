@@ -1,26 +1,18 @@
-import './App.css';
-import Row from './Row/Row';
-import requests from './requests';
-import Banner from './Banner/Banner';
-import Nav from './Nav/Nav';
-
-function App() {
-  return (
-    <div className="App">
-      <Nav/>
-      <Banner/>
-      <Row title='NETFLIIX ORIGINALS' fetchUrl={requests.fetchNetflixOriginals} isPoster/>
-      <Row title='Trending Now' fetchUrl={requests.fetchTrending}/>
-      <Row title='Top Rated' fetchUrl={requests.fetchTopRated}/>
-      <Row title='Action Movies' fetchUrl={requests.fetchActionMoivies}/>
-      <Row title='Comedy Movies' fetchUrl={requests.fetchComedyMoivies}/>
-      <Row title='Horror Movies' fetchUrl={requests.fetchHorroMoivies}/>
-      <Row title='Romance Movies' fetchUrl={requests.fetchRomanceMoivies}/>
-      <Row title='Documentaries' fetchUrl={requests.fetchDocumentaries}/>
+import React , {Component} from 'react';
+import {Route } from 'react-router-dom';
+import Auth from './Auth';
+import Home from './Home'
 
 
-    </div>
-  );
+class App extends Component {
+    render(){
+        return(
+            <div>
+           <Route path='/' exact component={Auth}/>
+           <Route path='/home' component={Home}/>
+           </div>
+        )
+    }
 }
 
-export default App;
+export default App ;
